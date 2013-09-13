@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#"
+     xml:base="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#farFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#farFrom"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#hasBehavior -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#hasBehavior"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#hasEnhancement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#hasEnhancement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#hasLocation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#Infiltrating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#Infiltrating"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#LateralVentricle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#LateralVentricle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#NonEnhanced -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#NonEnhanced"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#PeripheralTumor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#PeripheralTumor">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#farFrom"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#LateralVentricle"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#hasLocation"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#PeripherialHemisphere"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#PeripherialHemisphere -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#PeripherialHemisphere"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#SmallTumor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#SmallTumor">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#hasBehavior"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#Infiltrating"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#hasEnhancement"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#NonEnhanced"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#D -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#D">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#farFrom"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#LateralVentricle"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#hasEnhancement"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#NonEnhanced"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#hasLocation"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-60#PeripherialHemisphere"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

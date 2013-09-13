@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#"
+     xml:base="http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#hasColor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#hasColor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#hasOnTop -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#hasOnTop"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#hasPart"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#Beard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#Beard"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#Hat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#Hat"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#Red -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#Red"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#RedHat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#RedHat">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#Hat"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#hasColor"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#Red"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#SmurfLeader -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#SmurfLeader">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#hasOnTop"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#RedHat"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#hasPart"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#Beard"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#D -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#D">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#hasOnTop"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#Hat"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#hasColor"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#Red"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#hasPart"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/5/untitled-ontology-37#Beard"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

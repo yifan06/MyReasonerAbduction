@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#"
+     xml:base="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#hasColor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#hasColor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#hasOnTop -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#hasOnTop"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#hasPart"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#Beard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#Beard"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#Golden -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#Golden"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#GoldenHair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#GoldenHair">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#Hair"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#hasColor"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#Golden"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#Hair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#Hair"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#Red -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#Red"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#RedHat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#RedHat"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#SmurfFemale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#SmurfFemale">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#hasOnTop"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#WhiteHat"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#hasPart"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#GoldenHair"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#SmurfFollower -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#SmurfFollower">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#hasOnTop"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#WhiteHat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#SmurfLeader -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#SmurfLeader">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#hasOnTop"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#RedHat"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#hasPart"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#Beard"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#White -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#White"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#WhiteHat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#WhiteHat"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#D -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#D">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#hasOnTop"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yifan/ontologies/2013/8/untitled-ontology-59#WhiteHat"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,6 @@
+*.class
+.project
+bin
+.setting*
+*.jar
+dataset
